@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast - Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SkyCast</h1>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <input type="text" id="cityInput" placeholder="Enter city..." />
+    <button onclick="getWeather()">Search</button>
+
+    <div id="searchHistory"></div>
+
+    <section id="currentWeather" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" src="" alt="">
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </section>
+
+    <section id="weeklyForecast" class="hidden">
+      <h3>7-Day Forecast</h3>
+      <div id="forecastCards" class="forecast-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
